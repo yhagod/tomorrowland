@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('shared/head') %>
+<body>
+    <%- include('shared/header') %>
+    <section class="home">
+        <div class="banner">
+            <h2>Bem vindo ao Tomorrowland Brasil</h2>
+            <img src="/static/banner.jpg" alt="">
+        </div>
+        
+        <form method="POST" action="/">
+            <h2>Envie seus dados e verifique a disponibilidade de ingressos.</h2>
+            <input type="text" placeholder="nome" name="nome">
+            <input type="text" placeholder="email" name="email">
+            <select name="DJ's" size="5" multiple>
+                    <option value="Martin Garrix">Martin Garrix -10/09/2018</option>
+                    <option value="Dimitri Vegas e Like Mike">Dimitri Vegas e Like Mike -11/09/2018</option>
+                    <option value="Armin Van Buuren">Armin Van Buuren -12/09/2018</option>
+                    <option value="Hardwell">Hardwell -13/09/2018</option>
+                    <option value="The Chainsmokers"> The Chainsmokers -14/09/2018</option>
+                  </select>
+            <textarea rows="10" placeholder="Mensagem" name="Mensagem"></textarea>
+            
+            <button>Enviar</button>
+        </form>
+    </section>
+    
+    <%- include('shared/footer') %>
+</body>
+</html>
