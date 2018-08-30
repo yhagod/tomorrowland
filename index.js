@@ -21,6 +21,16 @@ app.post('', (req, res) => {
     });
 });
 
+
+app.confirmar('',(req,res) => {
+     let ingressos = `ingresso: ${req.body.option.}`
+
+    fs.writeFile('ingresso.txt', ingressos, {flag: 'a'}, (err) => {
+    res.render('ingresso');
+    });
+});
+
+
 app.get('/music', (req, res) => {
     res.render('music', {"musics":musics});
 });

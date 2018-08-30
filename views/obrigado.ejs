@@ -3,9 +3,18 @@
 <%- include('shared/head') %>
 <body>
     <%- include('shared/header') %>
-    <h1>Obrigado</h1>
+    <h1>Obrigado pelas informações. <span id="usuario"></span></h1>
     <p>
-        Nós recebemos sua mensagem e nossa equipe entrará em contato em breve com um gatinho fofo.
-    </p>    
+        Nós recebemos sua mensagem, verifique a disponibilidade de ingressos.
+    </p>   
+    <form method="Confirmar" action="/">
+        <select name="DJ's" size="4">
+        <option value="Martin Garrix">Pista premium - R$850</option>
+        <option value="Dimitri Vegas e Like Mike">Pista vip - R$750</option>
+        <option value="Armin Van Buuren">Camarote Land - R$1500</option>
+        <option value="Hardwell">Camarote Tomorrow - R$1500</option>
+      </select>
+      <button>Enviar</button>
+    </form>
 </body>
 </html>
