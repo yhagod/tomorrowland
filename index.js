@@ -22,8 +22,8 @@ app.post('', (req, res) => {
 });
 
 
-app.confirmar('',(req,res) => {
-     let ingressos = `ingresso: ${req.body.option.}`
+app.post('/confirmar',(req,res) => {
+    let ingressos = `ingresso: ${req.body.djs}`;
 
     fs.writeFile('ingresso.txt', ingressos, {flag: 'a'}, (err) => {
     res.render('ingresso');
